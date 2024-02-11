@@ -1,0 +1,783 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'DM Serif Display', serif;
+    background-image: url("/images/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+
+}
+
+header{
+    height: 100px;
+    display: flex;
+    align-items: baseline;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+    align-self: flex-start;
+}
+
+#casa-maria-text{
+    color:#F2EEB6;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+/* Texto de iniciar sesion */
+header h2{
+    color: #F2EEB6;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+
+#inicio-sesion-container{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+#inicio-sesion-container span{
+    color: #F2EEB6;
+    font-size: 45px;
+    margin-right: 20px;
+}
+
+#inicio-sesion-container span:hover{
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+
+#nav-bar{
+    color: #F2EEB6;
+    flex-grow: 3;
+
+}
+
+
+#nav-bar ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+#nav-bar ul li{
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+#nav-bar ul li:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#nav-bar ul a{
+    color: #F2EEB6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+main{
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+#nuestra-historia-sesion{
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   margin-top: 10vh;
+   align-self: center;
+}
+
+.nh-texto{
+    font-size: 100px;
+    margin-bottom: 0%;
+}
+
+#sobre-nosotros-aside{
+    display: flex;
+    flex-direction: column;
+    background-color: #59252E;
+    margin: 50px;
+    height: 120vh;
+    justify-content: flex-start;
+    border-radius: 20px;
+}
+
+#sobre-nosotros-titulo{
+    color: #F2EEB6;
+    font-size: 50px;
+    margin-left: 40%;
+}
+
+#quienes-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quienes-box{
+    opacity: 0.;
+    border-radius: 15px;
+    padding-top: 20px;
+    width: 450px;
+    margin: 100px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+
+.quienes-box img{
+    opacity: 0.6;
+    width: 350px;
+    height: 550px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: 1s;
+
+}
+
+
+.quienes-box h2{
+    opacity: 0.6;
+    color:#F2EEB6;
+    font-size: 35px;
+    transition: 1s;
+}
+
+.quienes-box p{
+    opacity: 0;
+    color: #ffffff;
+    font-size: 15px;
+    transition: 1s;
+    
+}
+
+.quienes-box:hover{
+    opacity: 1;
+    background-color: #732C3F;
+    border-radius: 15px;
+    padding-top: 20px;
+    width: 450px;
+    margin: 100px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+}
+
+
+
+.quienes-box:hover img{
+    opacity: 1;
+    width: 400px;
+    height: 600px;
+    transition: 1s;
+}
+
+.quienes-box:hover h2{
+    opacity: 1;
+    color: #F2EEB6;
+    font-size: 40px;
+    transition: 1s;
+}
+
+.quienes-box:hover p{
+    color:#ffffff;
+    opacity: 1;
+    font-size: 20px;
+    transition: 1s;
+}
+
+#servicios{
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+#anchetas{
+    height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#anchetas img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+#anchetas img:hover{
+    cursor: crosshair;
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+#anchetas-title{
+    align-self: center;
+    font-size: 50px;
+    color: #F2EEB6;
+}
+
+#anchetas-p{
+    align-self: center;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+#decoraciones{
+    height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#decoraciones-title{
+    align-self: center;
+    font-size: 50px;
+    color: #F2EEB6;
+}
+
+#decoraciones-p{
+    align-self: center;
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+#decoraciones img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+#decoraciones img:hover{
+    cursor: crosshair;
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+footer{
+    background-color:#732C3F;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    color: #F2EEB6;
+    
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+}
+
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div h3{
+    font-weight: 100;
+}
+
+footer div ul{
+    list-style: none;
+    margin-top: 0;
+}
+
+footer div ul li:hover{
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#contacto a{
+    color: #F2EEB6;
+    text-decoration: none;
+}
+
+#contacto a:hover{
+    color: #ffffff;
+}
+
+#siguenos{
+    margin-right: 100px;
+}
+
+#siguenos a{
+    color: #F2EEB6;
+    margin-left: 10px;
+}
+
+#siguenos a:hover{
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+#redes-sociales{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+  
+  @media only screen and (max-width: 1024px) {
+    /* For tablets: */
+    header{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-bottom: 50px;
+        background-color: #732C3F;
+        height: 350px;
+        width: 100%;
+    }
+
+    header img{
+        align-self: center;
+   }
+
+   #nuestra-historia-sesion{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+   }
+
+   #nuestra-historia-sesion{
+    height: 300px;
+    margin-bottom: 0;
+   }
+
+   .nh-texto{
+    font-size: 50px;
+   }
+
+   #sobre-nosotros-aside{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+    margin-left: 0;
+    align-items: center;
+    height: auto;
+   }
+
+   #sobre-nosotros-titulo{
+    margin: 0;
+
+   }
+
+   #quienes-container{
+    display: flex;
+    flex-flow: column wrap;
+   }
+
+   .quienes-box{
+    opacity: 1;
+    background-color: #732C3F;
+    border-radius: 15px;
+    padding-top: 20px;
+    width: 450px;
+    margin: 100px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+   }
+
+   .quienes-box img{
+    opacity: 1;
+    width: 400px;
+    height: 600px;
+
+}
+
+
+.quienes-box h2{
+    opacity: 1;
+    color: #F2EEB6;
+    font-size: 40px;
+}
+
+.quienes-box p{
+    color:#ffffff;
+    opacity: 1;
+    font-size: 20px;
+    transition: 1s;
+    
+}
+
+.quienes-box:hover{
+    opacity: 1;
+    background-color: #732C3F;
+    border-radius: 15px;
+    padding-top: 20px;
+    width: 450px;
+    margin: 100px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+}
+
+
+
+.quienes-box:hover img{
+    opacity: 1;
+    width: 400px;
+    height: 600px;
+}
+
+.quienes-box:hover h2{
+    opacity: 1;
+    color: #F2EEB6;
+    font-size: 40px;
+    transition: 1s;
+}
+
+.quienes-box:hover p{
+    color:#ffffff;
+    opacity: 1;
+    font-size: 20px;
+    transition: 1s;
+}
+
+  }
+  @media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #nav-bar{
+        margin-right: 15%;
+    }
+
+    #nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #inicio-sesion-container span{
+        margin-right: 0px;
+    }
+    
+
+    #iniciar-sesion-texto{
+        margin-left: 20px;
+    }
+
+    #nuestra-historia-sesion{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+       }
+    
+    #nuestra-historia-sesion{
+        height: 300px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+       }
+    
+    .nh-texto{
+        font-size: 40px;
+       }
+
+    #servicios{
+        background-color:black;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    
+    #anchetas{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        justify-content: none;
+        scroll-snap-type: x mandatory;
+        width: 100%;
+    }
+    
+    #anchetas img{
+        width: 100%;
+        left: 0;
+        position: sticky;
+        object-fit: cover;
+        border-radius: 5px;
+        scroll-snap-align: center;
+        opacity: 1;
+        flex-grow: 0;
+        transition: none;
+    }
+
+    #anchetas img:hover{
+        width: 100%;
+        left: 0;
+        position: sticky;
+        object-fit: cover;
+        border-radius: 5px;
+        scroll-snap-align: center;
+        opacity: 1;
+        filter: none;
+        cursor: none;
+    }
+    
+    .ocultar{
+        display:none !important;
+    }
+    
+    #anchetas-title{
+        align-self: center;
+        font-size: 50px;
+        color: #F2EEB6;
+        margin-left: 5%;
+        text-align: center;
+    }
+    
+    #anchetas-p{
+        align-self: center;
+        font-size: 25px;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    
+    
+    #decoraciones{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+        justify-content: none;
+        scroll-snap-type: x mandatory;
+        width: 100%;
+    }
+    
+    #decoraciones-title{
+        align-self: center;
+        font-size: 50px;
+        color: #F2EEB6;
+        margin-left: 5%;
+        text-align: center;
+    }
+    
+    #decoraciones-p{
+        align-self: center;
+        font-size: 25px;
+        color: #ffffff;
+        margin-top: 0;
+        margin: 15%;
+
+        text-align: center;
+    }
+    
+    #decoraciones img{
+        width: 100%;
+        left: 0;
+        position: sticky;
+        object-fit: cover;
+        border-radius: 5px;
+        scroll-snap-align: center;
+        opacity: 1;
+        flex-grow: 0;
+        transition: none;
+    }
+    
+    #decoraciones img:hover{
+        width: 100%;
+        left: 0;
+        position: sticky;
+        object-fit: cover;
+        border-radius: 5px;
+        scroll-snap-align: center;
+        opacity: 1;
+        filter: none;
+        cursor: none;
+    }
+
+    footer{
+        background-color:#732C3F;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        color: #F2EEB6;
+        align-items: center;
+        
+    }
+
+    footer img{
+        align-self: center;
+    }
+
+    
+    footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    footer div h3{
+    font-weight: 100;
+    }
+
+    footer div ul{
+    list-style: none;
+    margin-top: 0;
+    }
+
+    footer div ul li{
+        cursor: pointer;
+        color: #ffffff;
+        text-align: center;
+        margin-right: 17%;
+    }
+
+    footer div ul li:hover{
+    cursor: pointer;
+    color: #ffffff;
+    }
+
+    #contacto a{
+    color: #F2EEB6;
+    text-decoration: none;
+    }
+
+    #contacto a:hover{
+    color: #ffffff;
+    }
+
+    #siguenos{
+    margin-right: 0px;
+    }
+
+    #siguenos a{
+    color: #F2EEB6;
+    margin-left: 10px;
+    }
+
+    #siguenos a:hover{
+    color: #ffffff;
+    margin-left: 10px;
+    }
+
+    #redes-sociales{
+    display: flex;
+    flex-direction: row;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 428px) {
+        header{
+            background:none;
+        }
+        header img{
+            margin-left: 5vh;
+        }
+
+        header h1{
+            margin-left: 5vh;
+        }
+        #nav-bar{
+            margin-left: 5vh;
+        }
+    
+    
+        #nuestra-historia-sesion{
+            background: none;
+            height: auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        #sobre-nosotros-aside{
+            background: none;
+        }
+
+        #sobre-nosotros-titulo{
+            margin: 20%;
+        }
+
+        .quienes-box{
+            background: none;
+            margin: 5%;
+        }
+
+        .quienes-box h2{
+            margin: 15%;
+        }
+        
+        
+        .nh-texto{
+            font-size: 30px;
+           }
+
+        #anchetas{
+            margin:10%
+        }
+
+        #decoraciones{
+            margin: 10%;
+        }
+
+        #servicios{
+            background: none;
+        }
+    
+        footer{
+            background: none;
+        }
+
+
+    
+        
+  }
